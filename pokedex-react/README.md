@@ -41,18 +41,32 @@ React Hooks (useState e useEffect)
 📁 Estrutura do projeto
 
 src/
+
 ├── components/
+
 │   ├── PokemonCard/
+
 │   ├── PokemonList/
+
 │   ├── PokemonModal/
+
 │   └── SearchBar/
+
+
 ├── hooks/
+
 │   └── usePokemon.js
+
 ├── services/
+
 │   └── pokemonApi.js
+
 ├── App.jsx
+
 ├── App.css
+
 ├── index.css
+
 └── main.jsx
 
 Organização
@@ -123,12 +137,9 @@ Utilização de useEffect para executar as requisições à API.
 
 Utilização de Promise.all para buscar os detalhes dos Pokémon de uma página em paralelo.
 
+Autor: Luiz Henrique
+
 Utilização de CSS para estilização e responsividade.
 
-🎯 Objetivo
-
-Projeto desenvolvido com o objetivo de praticar React, consumo de APIs REST, gerenciamento de estados, componentização e organização de código.
-
-Desenvolvido com 💛 utilizando React e PokéAPI.
 
 
