@@ -1,0 +1,149 @@
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.pokemon-modal {
+    position: relative;
+    background: white;
+    width: 100%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.close-button {
+    position: absolute;
+    right: 18px;
+    top: 12px;
+    border: none;
+    background: none;
+    font-size: 32px;
+    cursor: pointer;
+    color: #555;
+}
+
+.modal-header {
+    text-align: center;
+    padding: 15px 0 25px;
+}
+
+.modal-header > span {
+    color: #888;
+    font-weight: bold;
+}
+
+.modal-header h2 {
+    text-transform: capitalize;
+    font-size: 28px;
+    margin: 8px 0;
+}
+
+.modal-header img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+}
+
+.modal-header .pokemon-types {
+    margin-top: 10px;
+}
+
+.pokemon-information h3 {
+    margin: 20px 0 12px;
+    color: #333;
+}
+
+.information-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.information-grid > div {
+    background: #f4f5f9;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.information-grid p {
+    margin-top: 5px;
+}
+
+.abilities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.abilities span {
+    background: #f4f5f9;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-transform: capitalize;
+}
+
+.stat-item {
+    display: grid;
+    grid-template-columns: 100px 35px 1fr;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.stat-name {
+    text-transform: capitalize;
+    font-size: 13px;
+}
+
+.stat-value {
+    font-weight: bold;
+}
+
+.stat-bar {
+    height: 9px;
+    background: #e5e5e5;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.stat-progress {
+    height: 100%;
+    background: #e3350d;
+    border-radius: 10px;
+}
+
+.sprites {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.sprites img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    background: #f4f5f9;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .pokemon-modal {
+        padding: 20px 15px;
+    }
+
+    .stat-item {
+        grid-template-columns: 85px 30px 1fr;
+        gap: 6px;
+    }
+}
